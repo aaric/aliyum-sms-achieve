@@ -1,0 +1,10 @@
+# Spring settings
+spring:
+  profiles:
+    active: dev
+
+# Aliyun settings
+aliyun:
+  dysms:
+    accessKeyId : yourAccessKeyId
+    accessKeySecret : yourAccessKeySecret
