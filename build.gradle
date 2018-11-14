@@ -1,5 +1,5 @@
 group 'com.github.aaric'
-version '0.0.2-SNAPSHOT'
+version '0.1.0-SNAPSHOT'
 
 apply plugin: 'java'
 apply plugin: 'org.springframework.boot'
@@ -13,6 +13,7 @@ repositories {
 }
 
 dependencies {
+    compile("com.google.code.gson:gson:2.8.+")
     compile("org.apache.commons:commons-lang3:3.+")
 
     compile("com.aliyun:aliyun-java-sdk-core:4.0.6")
