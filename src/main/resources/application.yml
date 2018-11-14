@@ -1,0 +1,13 @@
+# Spring settings
+spring:
+  profiles:
+    active: dev
+
+# Aliyun settings
+aliyun:
+  dysms:
+    accessKeyId : yourAccessKeyId
+    accessKeySecret : yourAccessKeySecret
+    test:
+      number: 13400000000
+      bizId: 000000000000000000^0
