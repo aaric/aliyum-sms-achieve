@@ -61,8 +61,14 @@ public class SmsServiceImpl implements SmsService {
     @Value("${aliyun.dysms.accessKeySecret}")
     private String accessKeySecret;
 
+    /**
+     * 短信签名
+     */
+    @Value("${aliyun.dysms.signName}")
+    private String signName;
+
     @Override
-    public String sendSms(String signName, String templateCode, Map<String, String> templateParams, String outId, String... tos) {
+    public String sendSms(String templateCode, Map<String, String> templateParams, String outId, String... tos) {
         // 可自助调整超时时间
         System.setProperty("sun.net.client.defaultConnectTimeout", ALIYUN_SMS_DEFAULT_TIMEOUT);
         System.setProperty("sun.net.client.defaultReadTimeout", ALIYUN_SMS_DEFAULT_TIMEOUT);

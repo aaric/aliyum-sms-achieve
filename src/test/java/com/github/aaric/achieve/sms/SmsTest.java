@@ -8,6 +8,7 @@ import com.aliyuncs.dysmsapi.model.v20170525.SendSmsRequest;
 import com.aliyuncs.dysmsapi.model.v20170525.SendSmsResponse;
 import com.aliyuncs.profile.DefaultProfile;
 import com.aliyuncs.profile.IClientProfile;
+import org.junit.Ignore;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Value;
@@ -57,6 +58,7 @@ public class SmsTest {
     private String testBizId;
 
     @Test
+    @Ignore
     public void testSendSms() throws Exception {
         // 可自助调整超时时间
         System.setProperty("sun.net.client.defaultConnectTimeout", "10000");
@@ -91,6 +93,7 @@ public class SmsTest {
     }
 
     @Test
+    @Ignore
     public void querySmsStatus() throws Exception {
         // 可自助调整超时时间
         System.setProperty("sun.net.client.defaultConnectTimeout", "10000");
