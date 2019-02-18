@@ -46,6 +46,7 @@ public class SmsServiceTest {
     }
 
     @Test
+    @Ignore
     public void testSendSmsMsg() {
         Map<String, String> templateParams = new HashMap<>();
         templateParams.put("code", MessageFormat.format("{0,number,000000}", new Random().nextInt(999999)));
