@@ -8,6 +8,7 @@ aliyun:
   dysms:
     accessKeyId : yourAccessKeyId
     accessKeySecret : yourAccessKeySecret
+    signName: ${ALIYUN_DYSMS_SIGNNAME:英卡科技}
     test:
       number: 13400000000
       bizId: 000000000000000000^0

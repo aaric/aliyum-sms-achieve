@@ -13,12 +13,11 @@ public interface SmsService {
     /**
      * 发送短信
      *
-     * @param signName       发送内容
      * @param templateCode   短信模板
      * @param templateParams 模板中的变量参数
      * @param outId          外部流水扩展字段
      * @param tos            发送人
      * @return 发送回执ID
      */
-    String sendSms(String signName, String templateCode, Map<String, String> templateParams, String outId, String... tos);
+    String sendSms(String templateCode, Map<String, String> templateParams, String outId, String... tos);
 }
